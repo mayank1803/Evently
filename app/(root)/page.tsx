@@ -1,9 +1,11 @@
 
 import { Button } from '@/components/ui/button'
+import { SearchParamProps } from '@/types';
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default async function Home() {
+
   return (
     <>
       <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
@@ -18,7 +20,7 @@ export default async function Home() {
             </Button>
           </div>
 
-          <Image
+          <Image 
             src="/assets/images/hero.png"
             alt="hero"
             width={1000}
@@ -26,17 +28,14 @@ export default async function Home() {
             className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
           />
         </div>
-      </section>
+      </section> 
 
       <section id="events" className="wrapper my-8 flex flex-col gap-8 md:gap-12">
         <h2 className="h2-bold">Trust by <br /> Thousands of Events</h2>
 
         <div className="flex w-full flex-col gap-5 md:flex-row">
-          Search
-          CategoryFilter
+          
         </div>
-
-
       </section>
     </>
   )
